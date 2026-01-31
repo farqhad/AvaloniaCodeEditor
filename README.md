@@ -1,5 +1,7 @@
 🧩 C# Code Editor & Compiler (Avalonia UI)
 
+(Project Written: March 2024)
+
 A desktop application built with Avalonia UI that provides a simple
 code editor and allows compiling and executing C# code via system-level
 process calls.
