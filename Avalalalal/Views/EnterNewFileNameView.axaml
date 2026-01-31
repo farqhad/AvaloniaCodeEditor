@@ -1,0 +1,55 @@
+<UserControl
+	x:Class="Avalalalal.Views.EnterNewFileNameView"
+	xmlns="https://github.com/avaloniaui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:vm="using:Avalalalal.ViewModels"
+	d:DesignHeight="450"
+	d:DesignWidth="800"
+	x:DataType="vm:EnterNewFileNameViewModel"
+	mc:Ignorable="d">
+
+
+	<Grid RowDefinitions="*,*,*">
+
+		<TextBox
+			Grid.Row="1"
+			Width="300"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Top"
+			FontSize="20"
+			Text="{Binding FileName}" />
+
+		<TextBlock
+			Grid.Row="0"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Bottom"
+			FontSize="20"
+			Text="Name(with extension):" />
+
+		<Button
+			Grid.Row="2"
+			Width="170"
+			Height="55"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Center"
+			Background="Gray"
+			Command="{Binding CreateCommand}"
+			Content="Create"
+			FontSize="20" />
+
+		<Button
+			Grid.Row="0"
+			Width="80"
+			Height="45"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Background="Gray"
+			Command="{Binding BackButtonCommand}"
+			Content="back"
+			FontSize="20" />
+
+	</Grid>
+
+</UserControl>
